@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="bg-gray-200 ">
+  
+<!-- header atas -->
+<div class="bg-gradient-to-r from-[#3BC0A8] to-[#005461] h-20 items-center flex font-poppins rounded-b-4xl shadow-md shadow-gray-400 slide-up">
+   <!--header atas Kiri -->
+    <img src="Logoputih.svg" class="w-40 h-40 ml-6 " >
+
+    <!--header atas Kanan -->
+    <div class="text-white ml-auto mr-4 pr-4">
+    <p>Ns. Nur Wati</p>
+    <p>Perawat Poli Mata</p>
+    </div>
+  <img src="fotoprofil.svg" class=" mr-8" >
+</div>
+
+<div class="flex">
+<!-- Kiri Sidebar -->
+<aside class=" text-black  w-70 h-135 p-4 slide-left ">
+
+<div class="ml-6 ">
+  <p class="bg-[#005461] bg-clip-text text-transparent font-medium ">UTAMA</p>
+  <ul class="mb-4 space-y-6 ">
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-5 text-sm " ><img src="dashboard.svg" class="ml-2 "> <a href="index.html" >Dashboard Antrian</a></li>
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-8 text-sm "><img src="asesmen.svg" class="ml-3 "> <a href="asesmenpasien.html " >Asesmen Pasien</a></li>
+  </ul><br>
+  <p class="bg-[#005461] font-medium bg-clip-text text-transparent text-base ">REKAM MEDIS</p>
+  <ul class="mb-4 space-y-6">
+    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-10 text-sm "><img src="data.svg" class="ml-3 "> <a href="datapasien.html">Data Pasien</a></li>
+    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-8 text-sm "><img src="laporan.svg" class="ml-3 "> <a href="laporanharian.html">Laporan Harian</a></li>
+  </ul>
+</div>
+
+</aside>
+
+<!-- Menu Atas -->
+  <main class="flex-1 p-4 ">
+      <h1 class="text-3xl text-[#3BC0A8] ">
+      Riwayat Asesmen
+    </h1>
+    <p class="text-black text-xs">Hasil asesmen perawat yang sudah diselesaikan hari ini</p>
+
+
+    <!-- atas header -->
+    <div class="bg-white rounded-2xl shadow-md shadow-gray-400 overflow-auto max-w-full overflow-hidden mt-4 w-fit h-fit">
+    
+    <div class="flex  items-center bg-gradient-to-r from-[#3BC0A8] to-[#005461] text-white px-8 py-4 shadow-md shadow-gray-400 ">
+      <p class=" text-center flex items-center gap-4"><img src="asesmenselesai.svg" > Asesmen Selesai Hari Ini</p>
+      <p class="text-sm ml-auto">Sabtu, 25 April 2026</p>
+    </div>
+
+    <!-- table -->
+    <div class="overflow-x-auto bg-white text-black blur-in">
+      <table class="w-full table-fixed text-xs ">
+        
+        <!-- atas -->
+        <thead class=" ">
+          <tr class="   ">
+            <th class="px-6 py-4 font-medium">NO.ANTRIAN</th>
+            <th class="px-15 py-4  font-medium">NAMA PASIEN</th>
+            <th class="px-15 py-4 font-medium">TD</th>
+            <th class="px-6 py-4 font-medium">BB/TB/BMI</th>
+            <th class="px-6 py-4 font-medium">SUHU</th>
+            <th class="px-6 py-4 font-medium">SpO<sub>2</sub></th>
+            <th class="px-6 py-4 font-medium">CATATAN</th>
+            <th class="px-6 py-4 font-medium">STATUS</th>
+          </tr>
+        </thead>
+
+        <!-- Body -->
+        <tbody class="">
+
+          <!-- 1 -->
+          <tr class="">
+            <td class="px-8 py-4">A-001</td>
+            <td class="px-6 py-4">Budi Santoso</td>
+            <td class="px-6 py-4">180/80 mmHg</td>
+            <td class="px-6 py-4">70 kg/ 170 cm/ 27.6</td>
+            <td class="px-13 py-4">36.7°C</td>
+            <td class="px-2 py-4">78 bpm</td>
+            <td class="px-6 py-4 ">Penglihatan saya buram saat sore hari</td>
+            <td class="px-2 py-4">
+              <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs">
+                 Selesai
+              </span>
+            </td>
+          </tr>
+
+          <!-- 2 -->
+          <tr class="">
+            <td class="px-8 py-4">A-002</td>
+            <td class="px-6 py-4">Dewi Lestari</td>
+            <td class="px-6 py-4">130/85 mmHg</td>
+            <td class="px-6 py-4">58 kg/ 158 cm/ 20.0</td>
+            <td class="px-13 py-4">37.6°C</td>
+            <td class="px-2 py-4">87 bpm</td>
+            <td class="px-6 py-4 ">Mata merah dan berair</td>
+            <td class="px-2 py-4">
+              <span class="bg-[#00546133] text-[#005461] px-3 py-1 rounded-full text-xs">
+                 Di dokter
+              </span>
+              </td>
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<br>
+<br>
+</body>
+
+</html>
