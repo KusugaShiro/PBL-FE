@@ -30,8 +30,8 @@
 <div class="ml-6 ">
   <p class="bg-[#005461] bg-clip-text text-transparent font-medium ">UTAMA</p>
   <ul class="mb-4 space-y-6 ">
-    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-5 text-sm slide-left1" ><img src="dashboard.svg" class="ml-2"> Dashboard Antrian</li>
-    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-8 text-sm slide-left2"><img src="asesmen.svg" class="ml-3 "> <a href="asesmenpasien.html " >Asesmen Pasien</a></li>
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-5 text-sm slide-left1" ><img src="dashboard.svg" class="ml-2"><a href="index.html"> Dashboard Antrian</a></li>
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-3 text-center flex items-center gap-8 text-sm slide-left2"><img src="asesmen.svg" class="ml-3 "> <a href="asesmenpasien.html " >Asesmen Pasien</a></li>
   </ul><br>
   <p class="bg-[#005461] font-medium bg-clip-text text-transparent text-base ">REKAM MEDIS</p>
   <ul class="mb-4 space-y-6">
@@ -60,13 +60,14 @@
         <div >
           <p class="text-black text-bold font-medium text-xl ">Siti Rahayu, 34 th</p>
           <p class="text-[#3BC0A8] text-sm">No RM: 2024-003</p>
+          <span>
           <p class=" bg-gradient-to-r from-[#3BC0A8] to-[#005461] rounded-lg shadow-md shadow-gray-400 p-2 text-xs">Konfirmasi & Mulai Asesmen</p>
         
         </div>
 
           <!-- Tengah Menu -->
            <span class=" " >
-          <p class=" bg-white text-black rounded-lg shadow-md shadow-gray-400 mt-12 p-2  rounded-lg hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] cursor-pointer text-xs">Panggil Pasien</p> 
+          <p class=" bg-white text-black rounded-lg shadow-md shadow-gray-400 mt-12 p-2 hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] cursor-pointer text-xs">Panggil Pasien</p> 
           </span>
 
 
@@ -239,13 +240,13 @@ flex items-center justify-center z-50">
       </div>
 
       <button onclick="closeModal()"
-      class="text-3xl ">
+      class="text-2xl ">
         x
       </button>
     </div>
 
     <!-- CONTENT -->
-    <div class="p-6 bg-[#F7F7F7]">
+    <div class="p-6 bg-[#F7F7F7] max-h-[90vh] overflow-y-auto">
 
       <!-- PROFILE -->
       <div
@@ -259,41 +260,251 @@ flex items-center justify-center z-50">
         </div>
 
         <div>
-          <h2 class="text-2xl font-semibold">
+          <h2 class="text-2xl ">
             Siti Rahayu
           </h2>
 
           <p class="text-sm opacity-90">
             34 tahun • Perempuan • RM: 2024-003
           </p>
+          
         </div>
       </div>
-
-      <!-- FORM -->
-      <div class="mt-6 grid grid-cols-2 gap-6">
-
-        <div>
-          <label class="text-sm font-semibold">
+          
+      <!-- FORM  TANDA-TANDA VITAL-->
+        <div class="mt-6 border-b border-[#3BC0A8] text-[#3BC0A8] pb-2 ">
+          <label class="w-full ">TANDA-TANDA VITAL</label>
+        </div>
+      <div class="mt-6 grid grid-cols-2 gap-6 text-black ">
+      
+        <div >
+          
+          <label class="text-sm  ">
             Tekanan Darah Sistolik
-          </label>
+          </label> 
 
-          <input type="text"
-          class="w-full border border-[#2BB7A3]
-          rounded-lg px-4 py-2 mt-2">
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> mmHg</p>
+            </div>
+          </div>
+
         </div>
 
         <div>
-          <label class="text-sm font-semibold">
+          <label class="text-sm ">
             Tekanan Darah Diastolik
-          </label>
+          </label> 
 
-          <input type="text"
-          class="w-full border border-[#2BB7A3]
-          rounded-lg px-4 py-2 mt-2">
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+           rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+             <p class="text-xs text-gray-500 ml-2"> mmHg</p>
+            </div>
+          </div>
         </div>
 
+        <div>
+          <label class="text-sm ">
+            FREKUENSI NADI
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> bpm</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="text-sm ">
+            FREKUENSI NAFAS
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> x/mnt</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="">
+          <label class="text-sm  ">
+            SUHU TUBUH
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+           class="w-full ring-1 ring-[#2BB7A3]
+           rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> °C</p>
+            </div>
+          </div>  
+
+        </div>
+
+
+        <div>
+          <label class="text-sm ">
+            SATURASI OKSIGEN (SpO<sub>2</sub>)
+          </label> 
+          
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+
+             <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> (%)</p>
+            </div>
+
+           </div> 
+        </div>
       </div>
 
+      <!-- FORM ANTROPOMETRI -->
+        <div class="mt-6 border-b border-[#3BC0A8] text-[#3BC0A8] pb-2">
+          <label class="w-full">ANTROPOMETRI</label>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-6 text-black ">
+      
+        <div >
+          
+          <label class="text-sm  ">
+            BERAT BADAN
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> kg</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div>
+          <label class="text-sm ">
+            TINGGI BADAN
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+           rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+             <p class="text-xs text-gray-500 ml-2"> cm</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="text-sm ">
+            INDEKS MASA TUBUH (BMI)
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> kg/m²</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="text-sm ">
+            LINGKAR PERUT
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+
+            <div class=" w-17">
+              <p class="text-xs text-gray-500 ml-2"> cm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- FORM ANTROPOMETRI 2-->
+        <div class="mt-6 border-b border-[#3BC0A8] text-[#3BC0A8] pb-2 ">
+          <label class="w-full">ANTROPOMETRI</label>
+        </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 text-black ">
+        <div>
+          <label class="text-sm ">
+            KELUHAN UTAMA (Konfirmasi Perawat)
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+          </div>
+
+        </div>
+      
+
+        <div>
+          <label class="text-sm  text-black">
+            RIWAYAT ALERGI
+          </label> 
+
+          <div class="flex items-center">
+            <input type="text"
+            class="w-full ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+          </div>
+
+        </div>
+
+        <div class="">
+          <label class="text-sm  text-black">
+            CATATAN TAMBAHAN PERAWAT
+          </label> 
+
+          <div class="flex items-center ">
+            <input type="text"
+            class="w-full h-20 ring-1 ring-[#2BB7A3]
+            rounded-lg px-4 py-2 mt-2">
+          </div>
+
+        </div>
+      </div>
+  <br>
+<div class=" border-b border-[#2BB7A3] -mx-6 " ></div><br>
+
+<div class="flex   text-right ml-auto gap-4 ">
+  <span class="text-right ml-auto  " >
+    <p class=" bg-white text-black rounded-lg  mt-12  px-4 py-2   from-[#3BC0A8] to-[#005461] cursor-pointer text-xs ring ring-black"><a href="index.html">Batal</a></p> 
+  </span>
+
+  <span class="" >
+    <p class=" bg-white rounded-lg  mt-12  px-4 py-2  bg-gradient-to-r from-[#3BC0A8] to-[#005461]  text-xs text-white "><a href="#.html">Simpan dan terukan ke dokter</a></p> 
+  </span>
+</div>
     </div>
   </div>
 </div>
