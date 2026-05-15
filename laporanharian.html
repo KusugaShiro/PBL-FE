@@ -6,69 +6,346 @@
   <link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200">
-<!-- Atas -->
-<div class="bg-gradient-to-r from-[#3BC0A8] to-[#005461] h-30 items-center flex font-poppins rounded-b-3xl">
-   <!--Atas Kiri -->
+
+ <!-- header atas -->
+<div class="bg-gradient-to-r from-[#3BC0A8] to-[#005461] h-20 items-center flex font-poppins rounded-b-4xl shadow-md shadow-gray-400 slide-up">
+   <!--header atas Kiri -->
     <img src="Logoputih.svg" class="w-40 h-40 ml-6 " >
 
-  
-
-    <!--Atas Kanan -->
-    <div class="text-white ml-auto mr-6 pr-6">
-    <p>Ns.Nur Wati</p>
+    <!--header atas Kanan -->
+    <div class="text-white ml-auto mr-4 pr-4">
+    <p>Ns. Nur Wati</p>
     <p>Perawat Poli Mata</p>
     </div>
-  
+  <img src="fotoprofil.svg" class=" mr-8" >
 </div>
 
 <div class="flex">
 <!-- Kiri Sidebar -->
-<aside class=" text-black bg-white w-70 h-155 p-4  ">
+<aside class=" text-black  w-70 h-203 p-4 slide-left ">
 
-<div class="ml-6">
-  <p class="bg-gradient-to-r from-[#3BC0A8] to-[#005461] bg-clip-text text-transparent">UTAMA</p>
-  <ul class="mb-4 space-y-6">
-    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-xl rounded-2xl p-2 text-center"><a href="index.html">Dashboard Antrian</a></li>
-    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-xl rounded-2xl p-2 text-center"><a href="asesmenpasien.html" >Asesmen Pasien</a></li>
+<div class="ml-6 ">
+  <p class="bg-[#005461] bg-clip-text text-transparent font-medium ">UTAMA</p>
+  <ul class="mb-4 space-y-6 ">
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-5 text-sm slide-left1" ><img src="dashboard.svg" class="ml-2"><a href="index.html"> Dashboard Antrian</a></li>
+    <li class=" bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-3 text-center flex items-center gap-8 text-sm slide-left2"><img src="asesmen.svg" class="ml-3 "> <a href="asesmenpasien.html " >Asesmen Pasien</a></li>
   </ul><br>
-  <p class="bg-gradient-to-r from-[#3BC0A8] to-[#005461] bg-clip-text text-transparent">REKAM MEDIS</p>
+  <p class="bg-[#005461] font-medium bg-clip-text text-transparent text-base ">REKAM MEDIS</p>
   <ul class="mb-4 space-y-6">
-    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-xl rounded-2xl p-2 text-center"><a href="datapasien.html">Data Pasien</a></li>
-    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-xl rounded-2xl p-2 text-center"><a href="laporanharian.html">Laporan Harian</a></li>
+    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-10 text-sm slide-left3"><img src="data.svg" class="ml-3 "> <a href="datapasien.html">Data Pasien</a></li>
+    <li class="bg-white hover:bg-gradient-to-r from-[#3BC0A8] to-[#005461] shadow-md shadow-gray-400 rounded-2xl p-2 text-center flex items-center gap-8 text-sm slide-left4"><img src="laporan.svg" class="ml-3 "> <a href="laporanharian.html">Laporan Harian</a></li>
   </ul>
 </div>
 
 </aside>
 
 <!-- Menu Atas -->
-  <main class="flex-1 p-4">
+  <main class="flex-1 p-4  "> 
+    <div class="flex items-center ">
       <h1 class="text-3xl text-[#3BC0A8] font-bold ">
       Laporan Harian
     </h1>
-    <p class="text-black ">Rekapitulasi Pelayanan Perawat</p>
 
-    <!-- Dalam Menu -->
+    <div class="text-right ml-auto">      
+    <span class="  flex items-center text-black rounded-lg shadow-md shadow-gray-400 mt-3 w-42 pl-4 ml-6 h-9 rounded-lg bg-white  text-xs" >
+    <p class=" ">25/04/2026</p>
+    <img src="datatanggalhitam.svg" class=" w-4 h-4 text-right ml-auto mr-4" >
+    </span>
+    </div>
+    
+    <div>
+        <span class="  flex items-center text-black rounded-lg shadow-md shadow-gray-400 mt-3 w-32 pl-4 ml-6 h-9 rounded-lg bg-white  text-xs" >
+    <img src="pdf.svg" class=" w-4 h-4 text-left mr-auto " >
+    <p class="text-left mr-auto">Unduh PDF</p>
+    </span>
 
+    </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <p class="text-black text-xs">Rekapitulasi Pelayanan Perawat</p>
 
 
-  </main>
 
+<br>
+<!-- Menu 4 -->
+ <div class="grid grid-cols-4 gap-8 mb-8 ">
+
+      <div class="bg-white p-2 rounded-3xl shadow-md text-center shadow-gray-400 h-28 slide-right1">
+        <p class="text-black text-xs">TOTAL KUNJUNGAN</p>
+        <h2 class="text-4xl font-bold text-[#005461] mt-1">04</h2>
+        <p class="text-black mt-2 text-xs">Hari ini</p>
+      </div>
+
+      <div class="bg-white p-2 rounded-3xl shadow-md shadow-gray-400 text-center h-28 slide-right2">
+        <p class="text-black text-xs">SELESAI</p>
+        <h2 class="text-4xl font-bold text-[#005461] mt-1">01</h2>
+        <p class="text-black mt-2 text-xs">Sudah dilayani</p>
+      </div>
+
+      <div class="bg-white p-2 rounded-3xl shadow-md shadow-gray-400 text-center h-28 slide-right3">
+        <p class="text-black text-xs">DALAM PROSES</p>
+        <h2 class="text-4xl font-bold text-[#005461] mt-1">02</h2>
+        <p class="text-black mt-2 text-xs">Sedang Berjalan</p>
+      </div>
+
+      <div class="bg-white p-2 rounded-3xl shadow-md shadow-gray-400 text-center h-28 slide-right4">
+        <p class="text-black text-xs">TIDAK HADIR</p>
+        <h2 class="text-4xl font-bold text-[#005461] mt-1">01</h2>
+        <p class="text-black mt-2 text-xs">Tidak Datang</p>
+      </div>
+
+    </div>
+
+    <!-- GRAFIK -->
+    <div class="grid grid-cols-2 gap-4 mb-8">
+
+  <!-- DISTRIBUSI KELUHAN -->
+  <div class="bg-white rounded-2xl shadow-md  shadow-gray-400 p-4 w-full h-60 ">
+
+    <!-- HEADER -->
+    <div class="flex items-center gap-2 border-b border-gray-300 pb-3 -mx-4 px-4">
+      <img src="keluhandanusia.svg" class="w-4 h-4">
+
+      <p class="text-sm text-gray-700">Distribusi Keluhan</p>
+    </div>
+
+    <!-- CARD -->
+    <div class="mt-4 space-y-2">
+
+      <!-- KELUHAN 1 -->
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">ISPA/Batuk</p>
+
+        <!-- WARNA BAR 1 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[55%] h-full bg-[#005461] rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">4</p>
+      </div>
+      <!-- KELUHAN 2 -->
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">Nyeri Kepala</p>
+
+        <!-- WARNA BAR 2 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[42%] h-full bg-[#3BC0A8] rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">3</p>
+      </div>
+
+      <!-- KELUHAN 3 -->
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">Hipertensi</p>
+
+        <!-- WARNA BAR 3 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[25%] h-full bg-orange-500 rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">2</p>
+      </div>
+
+      <!-- KELUHAN 4 -->
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">Gastritis/Mual</p>
+
+        <!-- WARNA BAR 4 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[12%] h-full bg-[#002B5B] rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">1</p>
+      </div>
+
+        <!-- KELUHAN 5 --> 
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">Gatal Kulit</p>
+
+        <!-- WARNA BAR 5 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[10%] h-full bg-lime-600 rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">1</p>
+      </div>
+
+        <!-- KELUHAN 6 -->
+      <div class="flex items-center gap-3">
+        <p class="w-28 text-xs text-gray-600">Lainnya</p>
+
+        <!-- WARNA BAR 6 -->
+        <div class="flex-1 h-2 bg-[#DDF4EF] rounded-full overflow-hidden">
+          <div class="w-[4%] h-full  rounded-full"></div>
+        </div>
+
+        <p class="text-xs text-gray-500 w-3">0</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  USIA -->
+  <div class="bg-white rounded-2xl shadow-md shadow-gray-400 p-4 w-full h-60 ">
+
+    <!-- HEADER -->
+    <div class="flex items-center gap-2 border-b border-gray-300 pb-3 -mx-4 px-4 ">
+
+      <img src="keluhandanusia.svg" class="w-4 h-4">
+
+      <p class="text-sm text-gray-700">Distribusi Usia</p>
+    </div>
+
+    <!-- CARD -->
+    <div class="flex items-end justify-between h-38 mt-6 px-2 ">
+
+      <!-- USIA 1 -->
+      <div class="flex flex-col items-center ">
+
+        <p class="text-[10px] text-gray-500 mb-2 ">0</p>
+        
+        <!-- WARNA BAR 1 -->
+        <div class="w-20 h-1 bg-[#CFEFE9] rounded-t-md"></div>
+
+        <p class="text-[10px] text-gray-400 mt-2">0-17</p>
+      </div>
+
+      <!-- USIA 2 -->
+      <div class="flex flex-col items-center">
+
+        <p class="text-[10px] text-gray-500 mb-2">2</p>
+
+        <!-- WARNA BAR 2 -->
+        <div
+        class="w-20 h-16 bg-[#CFEFE9] border border-[#69CBBB] rounded-t-md">
+        </div>
+
+        <p class="text-[10px] text-gray-400 mt-2">18-30</p>
+      </div>
+
+      <!-- USIA 3 -->
+      <div class="flex flex-col items-center">
+
+        <p class="text-[10px] text-gray-500 mb-2">4</p>
+        
+        <!-- WARNA BAR 3 -->
+        <div
+        class="w-20 h-24 bg-[#2BB7A3] rounded-t-md">
+        </div>
+
+        <p class="text-[10px] text-gray-400 mt-2">31-45</p>
+      </div>
+
+      <!-- USIA 4 -->
+      <div class="flex flex-col items-center">
+
+        <p class="text-[10px] text-gray-500 mb-2">3</p>
+
+        <!-- WARNA BAR 4 -->
+        <div
+        class="w-20 h-18 bg-[#BFECE5] border border-[#69CBBB] rounded-t-md">
+        </div>
+
+        <p class="text-[10px] text-gray-400 mt-2">46-60</p>
+      </div>
+
+      <!-- USIA 5 -->
+      <div class="flex flex-col items-center ">
+
+        <p class="text-[10px] text-gray-500 mb-2">1</p>
+
+        <!-- WARNA BAR 5 -->
+        <div
+        class="w-20 h-6 bg-[#BFECE5] border border-[#69CBBB] rounded-t-md">
+        </div>
+
+        <p class="text-[10px] text-gray-400 mt-2">60+</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+    <!-- atas header -->
+    <div class="bg-white rounded-2xl shadow-md shadow-gray-400 overflow-hidden">
+    
+    <div class="flex  items-center bg-gradient-to-r from-[#3BC0A8] to-[#005461] text-white px-8 py-4 shadow-md shadow-gray-400 blur-in">
+      <p class=" text-center flex items-center gap-4"><img src="detailpelayanan.svg" > Detail Pelayanan Hari Ini</p>
+      <p class="text-sm ml-auto">Sabtu, 25 April 2026</p>
+    </div>
+
+    <!-- table -->
+    <div class="overflow-x-auto bg-white text-black blur-in">
+      <table class="w-full text-xs ">
+        
+        <!-- atas -->
+        <thead class=" ">
+          <tr class="border-b border-gray-300">
+            <th class="px-6 py-4 font-medium">NO.ANTRIAN</th>
+            <th class="px-6 py-4 font-medium text-left">NAMA PASIEN</th>
+            <th class="px-6 py-4  font-medium text-left">MASUK</th>
+            <th class="px-6 py-4 font-medium text-left">SELESAI</th>
+            <th class="px-6 py-4 font-medium text-left">DURASI</th>
+            <th class="px-6 py-4 font-medium text-left">STATUS</th>
+          </tr>
+        </thead>
+
+        <!-- Body -->
+        <tbody class="">
+
+          <!-- 1 -->
+          <tr class="">
+            <td class="px-6 py-4 text-center">A-001</td>
+            <td class="px-6 py-4">Budi Santoso</td>
+            <td class="px-6 py-4">08:10</td>
+            <td class="px-6 py-4">08:23</td>
+            <td class="px-6 py-4">13 menit</td>
+            <td class="px-4 py-4">
+              <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs">
+                 Selesai
+              </span>
+            </td>
+          </tr>
+
+          <!-- 2 -->
+          <tr class="">
+            <td class="px-6 py-4 text-center">A-002</td>
+            <td class="px-6 py-4">Dewi Lestari</td>
+            <td class="px-6 py-4">08:35</td>
+            <td class="px-6 py-4">08:45</td>
+            <td class="px-6 py-4">11 menit</td>
+            <td class="px-4 py-4">
+              <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs">
+                 Selesai
+              </span>
+            </td>
+          </tr>
+
+          <!-- 3 -->
+          <tr class="">
+            <td class="px-6 py-4 text-center">A-003</td>
+            <td class="px-6 py-4">Sri Rahayu</td>
+            <td class="px-6 py-4">09:00</td>
+            <td class="px-6 py-4">-</td>
+            <td class="px-6 py-4">- menit</td>
+            <td class="px-4 py-4">
+              <span class="bg-[#00546133] text-[#005461] px-3 py-1 rounded-full text-xs ">
+                 Menunggu
+              </span>
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
 
 
 
@@ -141,7 +418,7 @@
 
 
 
-
+</main>
 
 
 
