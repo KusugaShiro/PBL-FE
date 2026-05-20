@@ -84,7 +84,7 @@
 </div>
 <br>
 <!-- Menu 4 -->
- <div class="grid grid-cols-4 gap-8 mb-8 ">
+ <div class="grid grid-cols-3 gap-8 mb-8 ">
 
       <div class="bg-white p-2 rounded-3xl shadow-md text-center shadow-gray-400 h-28 slide-right1">
         <p class="text-black text-xs">TOTAL ANTRIAN</p>
@@ -103,13 +103,6 @@
         <h2 class="text-4xl font-bold text-[#005461] mt-1">07</h2>
         <p class="text-black mt-2 text-xs">Dilanjutkan ke dokter</p>
       </div>
-
-      <div class="bg-white p-2 rounded-3xl shadow-md shadow-gray-400 text-center h-28 slide-right4">
-        <p class="text-black text-xs">SEDANG DILAYANI</p>
-        <h2 class="text-4xl font-bold text-[#005461] mt-1">02</h2>
-        <p class="text-black mt-2 text-xs">Di dokter</p>
-      </div>
-
     </div>
 
     <!-- atas header -->
@@ -564,224 +557,67 @@ flex items-center justify-center z-50">
 <br>
 <br>
 </body>
-
-
   <style>
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  /* 1. Gabungkan animasi slideRight jadi SATU deklarasi yang benar */
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px); /* Pakai translateX biar presisi di sumbu horizontal */
     }
-
-    .animate-fadeIn {
-      animation: fadeIn 1s ease-out;
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
-    @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  /* 2. Berikan delay/durasi yang berbeda agar kartu muncul bergantian secara rapi */
+  .slide-right1 {
+    animation: slideRight 0.8s ease-out;
   }
-}
-
-.slide-up {
-  animation: slideUp 2s ease-out;
-}
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
+  .slide-right2 {
+    animation: slideRight 1.2s ease-out;
   }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
+  .slide-right3 {
+    animation: slideRight 1.6s ease-out;
   }
-}
-
-.zoom-in {
-  animation: zoomIn 0.8s ease-out;
-}
-@keyframes blurIn {
-  from {
-    opacity: 0;
-    filter: blur(10px);
+  .slide-right4 {
+    animation: slideRight 2s ease-out;
   }
 
-  to {
-    opacity: 1;
-    filter: blur(0);
+  /* --- Animasi Lainnya Tetap Aman --- */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
-}
+  .animate-fadeIn { animation: fadeIn 1s ease-out; }
 
-.blur-in {
-  animation: blurIn 1s ease-out;
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate(100px);
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
   }
+  .slide-up { animation: slideUp 2s ease-out; }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
   }
-}
+  .zoom-in { animation: zoomIn 0.8s ease-out; }
 
-.slide-right {
-  animation: slideRight 0.8s ease-out ;
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate(300px);
+  @keyframes blurIn {
+    from { opacity: 0; filter: blur(10px); }
+    to { opacity: 1; filter: blur(0); }
   }
+  .blur-in { animation: blurIn 1s ease-out; }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  @keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
   }
-}
-
-.slide-right1{
-  animation: slideRight 1s ease-out ;
-}
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate(300px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-right2{
-  animation: slideRight 1.5s  ease-out ;
-}
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate(300px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-right3{
-  animation: slideRight 2s ease-out ;
-}
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translate(300px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-right4{
-  animation: slideRight 2.5s ease-out ;
-}
-
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-left {
-  animation: slideLeft 0.5s  ease-out ;
-}
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-left1{
-  animation: slideLeft 2s  ease-out ;
-}
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-left2{
-  animation: slideLeft 2.5s  ease-out ;
-}
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-left3{
-  animation: slideLeft 3s  ease-out ;
-}
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-left4{
-  animation: slideLeft 3.5s ease-out ;
-}
-
+  .slide-left { animation: slideLeft 0.5s ease-out; }
+  .slide-left1 { animation: slideLeft 2s ease-out; }
+  .slide-left2 { animation: slideLeft 2.5s ease-out; }
+  .slide-left3 { animation: slideLeft 3s ease-out; }
+  .slide-left4 { animation: slideLeft 3.5s ease-out; }
 </style>
 <script>
 function openModal() {
