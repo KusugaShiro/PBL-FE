@@ -1,1 +1,40 @@
-<a href="./dashboard/perawat/">Dashboard Perawat</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect to login kelompok 1</title>
+  </head>
+  <body>
+    <script>
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
+      }
+
+      function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+          const date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value
+      }
+
+      // Contoh pemakaian: Menambahkan cookie bernama 'username' yang aktif selama 7 hari
+      setCookie("role", "perawat");
+      cookie = getCookie("role");
+
+      console.log(cookie);
+      console.log(cookie == "perawat");
+      if (cookie == "perawat") {
+        window.location.href = "dashboard/perawat";
+      } else if (cookie == "dokter") {
+        window.location.href = "dashboard/dokter";
+      }
+    </script>
+  </body>
+</html>
