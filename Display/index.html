@@ -179,9 +179,9 @@
       <div>
         <div class="section-label mb-3">Sedang Dipanggil</div>
         <div class="called-card rounded-2xl px-10 py-8 flex flex-col items-center justify-center min-h-[210px]">
-          <span class="text-white font-black text-7xl tracking-tight leading-none drop-shadow-md">A–003</span>
+          <span class="text-white font-black text-7xl tracking-tight leading-none drop-shadow-md" id="nomor-dipanggil">A–003</span>
           <div class="border-b border-white/40 w-3/4 my-4"></div>
-          <span class="text-white font-semibold text-2xl tracking-wide">Siti Rahayu</span>
+          <span class="text-white font-semibold text-2xl tracking-wide" id="nama-dipanggil">Siti Rahayu</span>
         </div>
       </div>
 
@@ -190,15 +190,15 @@
         <div class="section-label mb-3">Jumlah Antrian</div>
         <div class="flex gap-4">
           <div class="stat-box">
-            <div class="val">12</div>
+            <div class="val" id="total-antrian">0</div>
             <div class="lbl">Total Antrian</div>
           </div>
           <div class="stat-box">
-            <div class="val">03</div>
+            <div class="val" id="menunggu">0</div>
             <div class="lbl">Menunggu</div>
           </div>
           <div class="stat-box">
-            <div class="val">01</div>
+            <div class="val">0</div>
             <div class="lbl">Selesai</div>
           </div>
         </div>
@@ -287,5 +287,6 @@
     tick();
     setInterval(tick, 1000);
   </script>
+  <script src="/src/js/api.js"></script>
 </body>
 </html>
