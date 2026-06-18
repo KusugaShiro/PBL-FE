@@ -1,4 +1,3 @@
-// kel1.auth_token user_id -> kel2.perawat/dokter user_id -> kel1.unit nama_unit
 // const API_HOST = "http://192.168.238.180:8000/api"; // Test Local
 // const API_HOST = "https://rawat4b06.vps-poliban.my.id/api"; // server
 const API_HOST = "https://8e59-2404-c0-c201-ad34-41ca-403b-fc3-3216.ngrok-free.app/api"; // ngrok
@@ -236,6 +235,7 @@ async function checkProfileUser(role, userId) {
 async function ShowDetailProfile(userId, role) {
   const unitNameEls = document.getElementsByClassName("nama-unit");
   const usernameEl  = document.getElementById("nama-user");
+  const usernameElClass  = document.getElementsByClassName("nama-user");
 
   const userProfile = await checkProfileUser(role, userId);
 
@@ -244,10 +244,16 @@ async function ShowDetailProfile(userId, role) {
     return;
   }
 
+  console.log(userProfile)
   const unitText = await getUnitName(userProfile.id_unit);
+  const username = userProfile.nama_perawat || userProfile.nama_dokter
 
   if (usernameEl) {
-    usernameEl.innerText = userProfile.nama_perawat || userProfile.nama_dokter || "-";
+    usernameEl.innerText = username
+  }
+
+  for (const el of usernameElClass) {
+    el.textContent = username || "-";
   }
 
   for (const el of unitNameEls) {
